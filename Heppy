@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Ucapan Hari Jadi untuk Izzul Akmal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      max-width: 500px;
+      margin: auto;
+    }
+    h1 {
+      color: #ff5e78;
+    }
+    button {
+      background-color: #ff5e78;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff3e5c;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎂 Selamat Hari Jadi, Izzul Akmal! 🎉</h1>
+    <p id="wish"></p>
+    <button onclick="generateWish()">Tukar Ucapan</button>
+  </div>
+
+  <script>
+    const wishes = [
+      "Selamat Hari Jadi, Izzul Akmal! Makin tua, makin hensem, makin susah saya nak tahan rindu 😜🎂",
+      "Izzul Akmal, hari ni hari jadi awak! Semoga hari ni penuh gelak tawa macam awak selalu buat saya senyum 😊❤️",
+      "Happy birthday, Izzul Akmal! Moga terus jadi lelaki idaman... tapi ingat, saya yang paling bertuah dapat kenal awak! 😉💘",
+      "Izzul Akmal, makin berusia makin matang, tapi tetap comel bila gelak tu keluar. Selamat hari jadi! 😄🎉",
+      "Selamat hari jadi Izzul Akmal! Kalau ada pertandingan ‘lelaki paling sweet’, awak dah menang tanpa bertanding 🏆💖"
+    ];
+
+    function generateWish() {
+      const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
+      document.getElementById("wish").innerText = randomWish;
+    }
+
+    // Auto-load one wish on page load
+    window.onload = generateWish;
+  </script>
+</body>
+</html>
